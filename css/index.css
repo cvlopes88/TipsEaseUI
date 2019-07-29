@@ -1,0 +1,61 @@
+@font-face {
+  font-family: 'Varela Round';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Varela Round Regular'), local('VarelaRound-Regular'), url(https://fonts.gstatic.com/s/varelaround/v12/w8gdH283Tvk__Lua32TysjIfp8uK.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Ubuntu Regular'), local('Ubuntu-Regular'), url(https://fonts.gstatic.com/s/ubuntu/v14/4iCs6KVjbNBYlgoKfw7z.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Josefin Sans Regular'), local('JosefinSans-Regular'), url(https://fonts.gstatic.com/s/josefinsans/v14/Qw3aZQNVED7rKGKxtqIqX5EUDXx9.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Josefin Sans Bold'), local('JosefinSans-Bold'), url(https://fonts.gstatic.com/s/josefinsans/v14/Qw3FZQNVED7rKGKxtqIqX5Ectllte10k.ttf) format('truetype');
+}
+* {
+  box-sizing: border-box;
+  max-width: 800px;
+}
+header {
+  font-family: 'Lobster', cursive;
+}
+.bottomsec {
+  max-width: 100%;
+  height: auto;
+}
+html,
+body {
+  margin: 0 auto;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: "Ubuntu", sans-serif;
+}
+html {
+  font-size: 100%;
+  background-color: white;
+}
+header nav {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 20px;
+}
+nav a {
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
