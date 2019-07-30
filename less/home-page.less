@@ -1,21 +1,138 @@
 * {
     box-sizing: border-box;
-    max-width: 800px;
-
+    max-width: 1400px;
+    
   }
   
   
+  
  header {
-  font-family: 'Lobster', cursive;
- }
+   font-family: "Ubuntu", "sans-serif";
+   //color: #f3e367;
   
+  }
+  .bottomsec {
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
   
-  
-   .bottomsec {
-      max-width: 100%;
-      height: auto;
+  .toptext h1 {
+    color: #252525;
+  }
+   
+    
+    .bottomsec img {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      border-radius: 100px;
+      padding: 5px;
+      
+      &:hover {
+       background-color: #252525;
+       
+      }
     }
    
+    
+
+    p{
+      font-family: "Varela Round", sans-serif;
+      color: #252525;
+    }  
+
+    .toptext {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+.centertext {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
       
-      
-      
+    // .topimg {
+    //   //border-radius: 20px;
+    // }
+    // header h1{
+    // webkit-animation-duration: 1s;
+    // animation-duration: 1s;
+    // webkit-animation-fill-mode: both;
+    // animation-fill-mode: both;
+    // }
+
+ 
+  
+// .follow:hover .overlay {
+//   height: 100%;
+// .bottomsec{
+//   color: white;
+//   font-size: 20px;
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   -webkit-transform: translate(-50%, -50%);
+//   -ms-transform: translate(-50%, -50%);
+//   transform: translate(-50%, -50%);
+//   text-align: center;
+// }
+// .follow {
+// //position: absolute;
+// left: -100px;
+// width: 100px;
+// height: 100px;
+// //background: ;
+// -webkit-animation: slide 0.5s forwards;
+// -webkit-animation-delay: 2s;
+// animation: slide 0.5s forwards;
+// animation-delay: 2s;
+// }
+
+button {
+  font-size: 20px;
+  width: 133px;
+  height: 47px;
+  border-radius: 30px;
+  background-color: #252525;
+  color:  #f3e367;
+  &:hover {
+    color: #252525;
+    background-color: #f3e367;
+  }
+}
+
+
+
+ .overlay{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+
+.follow:hover .overlay {
+  height: 100%;
+}
+
+.followtext {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
