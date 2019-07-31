@@ -46,6 +46,12 @@
     display: flex;
     align-items: center;
 
+    
+    @media @tablet {
+      height: 500px;
+    
+    }
+
    @media @mobile {
      height: 300px;
      width: 100%;
@@ -77,11 +83,30 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding-top: 667px;
+      padding-top: 467px;
+
+      // justify-content: space-between;
+      width: 100%;
+      z-index: 100%;
+      background-image: linear-gradient(rgba(5, 5, 3, 0), rgba(18, 19, 3, 0.966));
+      position: absolute;
+      top: 200px;
+      height: 740px;
+    
+    @media @tablet {
+      margin: 0;
+     // padding-top:100px; 
+      width: 100%;
+      padding-top: 85px;
+      height: 300px;
+
+    }
 
      @media @mobile {
        justify-content: baseline;
-       padding-top: 170px;
+       padding-top: 0;
+       height: 100px;
+      
 
      }
     }
@@ -92,9 +117,17 @@
   align-items: center;
   padding: 40px; 
   font-size: 30px;
+  border: 1px solid #f3e367;
+  
+@media @tablet {
+  font-size: 20px;
+  width: 100%;
+}
+
   
   @media @mobile {
     font-size: 90%;
+    
   }
 }
 
@@ -151,6 +184,10 @@ button {
    font-size: 50px;
    padding: 40px;
 
+   @media @tablet {
+     font-size: 150%;
+   }
+
    @media @mobile {
      font-size: 200%;
    }
@@ -191,6 +228,10 @@ button {
   transform: translate(-50%,-50%);
   font-size: 50px;
   padding: 40px;
+
+  @media @tablet {
+    font-size: 200%;
+  }
 
   @media @mobile {
     font-size: 200%;
@@ -246,6 +287,10 @@ button {
   font-size: 50px;
   padding: 40px;
 
+  
+  @media @tablet {
+    font-size: 200%;
+  }
 
   @media @mobile {
     font-size: 200%;
