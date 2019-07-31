@@ -1,18 +1,21 @@
  header nav {
   display: flex;
   justify-content: flex-end;
-  font-size: 20px;
-  padding-top: 17px;
+  font-size: 30px;
+  //padding-top: 17px;
  
+  @media @mobile {
+    font-size: 100%;
+  }
   
 }
 
 nav a {
     padding: 10px;
     text-decoration: none;
-    color: #252525;
+    color: #f3e367;
     &:hover{
-      color: #f3e367;
+      color: #e8e8e8;
 
     }
 }
@@ -21,17 +24,23 @@ nav a {
 
 .navtop {
   display: flex;
+  align-items: flex-end;
+  
   justify-content: space-between;
   width: 100%;
-  z-index: 100;
-  background-image: linear-gradient(rgba(63, 66, 33, 0), rgba(226, 230, 10, 0.849));
+  z-index: 100%;
+  background-image: linear-gradient(rgba(5, 5, 3, 0), rgba(18, 19, 3, 0.966));
   position: absolute;
   top: 0;
-  left: 0;
-  margin-left: 252px;
+  
 }
 
 header h1 {
-  color: #252525;
-  padding-left: 10px;
+  color: #f3e367;
+  font-size: 50px;
+  padding-left: 20px;
+
+  @media @mobile {
+    font-size: 100%;
+  }
 }

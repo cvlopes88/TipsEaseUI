@@ -1,7 +1,10 @@
 * {
     box-sizing: border-box;
     max-width: 1400px;
-    
+   @media @mobile {
+     box-sizing: border-box;
+     
+   }
   }
   
   
@@ -9,18 +12,50 @@
  header {
    font-family: "Ubuntu", "sans-serif";
    //color: #f3e367;
+   width: 100%;
   
   }
-  .bottomsec {
+   
+
+   .bottomsec {
     display: flex;
-    padding-left: 10px;
-    padding-right: 10px;
+    @media @mobile {
+      flex-direction: column;
+
+    }
+     
   }
   
   .toptext h1 {
-    color: #252525;
+    color: #f3e367;
   }
    
+  .centertext h2 {
+    color: #f3e367;
+  }
+
+  footer h4 {
+    color: #f3e367;
+  }
+
+   .topBack {
+    background: url(../img/victoria-kubiaki-emPsZ6MBCUs-unsplash.jpg);
+    background-size: 100%;
+    height: 934px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+   @media @mobile {
+     height: 300px;
+     width: 100%;
+   }
+
+   }
+
+
+
+
     
     .bottomsec img {
       display: flex;
@@ -28,74 +63,48 @@
       width: 100%;
       border-radius: 100px;
       padding: 5px;
-      
-      &:hover {
-       background-color: #252525;
-       
-      }
+     
     }
    
     
 
     p{
       font-family: "Varela Round", sans-serif;
-      color: #252525;
+      color: #f3e367;
     }  
 
     .toptext {
       display: flex;
       flex-direction: column;
       align-items: center;
+      padding-top: 667px;
+
+     @media @mobile {
+       justify-content: baseline;
+       padding-top: 170px;
+
+     }
     }
     
 .centertext {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 40px; 
+  font-size: 30px;
+  
+  @media @mobile {
+    font-size: 90%;
+  }
 }
 
 
 
-      
-    // .topimg {
-    //   //border-radius: 20px;
-    // }
-    // header h1{
-    // webkit-animation-duration: 1s;
-    // animation-duration: 1s;
-    // webkit-animation-fill-mode: both;
-    // animation-fill-mode: both;
-    // }
 
  
   
-// .follow:hover .overlay {
-//   height: 100%;
-// .bottomsec{
-//   color: white;
-//   font-size: 20px;
-//   position: absolute;
-//   top: 50%;
-//   left: 50%;
-//   -webkit-transform: translate(-50%, -50%);
-//   -ms-transform: translate(-50%, -50%);
-//   transform: translate(-50%, -50%);
-//   text-align: center;
-// }
-// .follow {
-// //position: absolute;
-// left: -100px;
-// width: 100px;
-// height: 100px;
-// //background: ;
-// -webkit-animation: slide 0.5s forwards;
-// -webkit-animation-delay: 2s;
-// animation: slide 0.5s forwards;
-// animation-delay: 2s;
-// }
-
 button {
-  font-size: 20px;
+  font-size: 15px;
   width: 133px;
   height: 47px;
   border-radius: 30px;
@@ -105,34 +114,156 @@ button {
     color: #252525;
     background-color: #f3e367;
   }
+
+@media @mobile {
+  font-size: 60%;
+  width: 90px;
+  height: 30px;
+}
+
 }
 
 
+///////////////// wwwwwwwwwwwwooooorrrrrrkkkkkk/////////////////
+ .follow {
+   position: relative;
+   display: inline-block;
+   padding: 40px;
+ }
 
- .overlay{
+ .overlay {
+   position: absolute;
+   transition: all .3s ease;
+   opacity: 0;
+   background-color: #f3e367;
+ }
+ .follow:hover .overlayBottom {
+   width: 100%;
+   opacity: 1;
+ }
+
+ .followtext {
+   color: #f3e367;
+   position: absolute;
+   top: 30%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   font-size: 50px;
+   padding: 40px;
+
+   @media @mobile {
+     font-size: 200%;
+   }
+ }
+
+ .overlayBottom {
+   padding: 100px;
+   border-radius: 500px;
+   height: 50%;
+   width: 0;
+   bottom: 0;
+   left: 0;
+  background-color: #202020;
+ }
+//////////////////////////////////////////////////////////////////////////////
+ .followCenter {
+  position: relative;
+  display: inline-block;
+  padding: 40px;
+}
+
+ .overlayRead {
   position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #008CBA;
-  overflow: hidden;
+  transition: all .3s ease;
+  opacity: 0;
+  background-color: black;
+}
+
+ .followCenter:hover .overlayCenter {
+  width: 100%;
+  opacity: 1;
+ }
+ .reviewsText {
+  color: #f3e367;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 50px;
+  padding: 40px;
+
+  @media @mobile {
+    font-size: 200%;
+  }
+
+}
+
+ .overlayCenter {
+  padding: 100px;
+  border-radius: 500px;
   width: 100%;
   height: 0;
-  transition: .5s ease;
-}
+  bottom: 0;
+  right: 0;
+  background-color: #202020; 
+   
+ }
 
-
-.follow:hover .overlay {
+.follow:hover .overlayBottom  {
   height: 100%;
 }
+.followCenter:hover .overlayCenter {
+  height: 100%;
+}
+.join:hover .overlayLast {
+  height: 100%;
+}
+//////////////////////////////////////////////////////////////////////////
 
-.followtext {
-  color: white;
-  font-size: 20px;
+.join {
+  position: relative;
+  display: inline-block;
+  padding: 40px;
+}
+
+.overlayJoin { 
   position: absolute;
-  top: 50%;
+  transition: all .3s ease;
+  opacity: 0;
+  background-color: #f3e367;
+}
+.join:hover .overlayLast {
+  width: 100%;
+  opacity: 1;
+}
+
+.joinText {
+  color: #f3e367;
+  position: absolute;
+  top: 20%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
+  transform: translate(-50%,-50%);
+  font-size: 50px;
+  padding: 40px;
+
+
+  @media @mobile {
+    font-size: 200%;
+  }
+
+}
+
+.overlayLast {
+   padding: 100px;
+   border-radius: 500px;
+   height: 100%;
+   width: 0;
+   bottom: 0;
+   right: 0;
+   background-color: #202020;
+}
+
+
+
+
+
